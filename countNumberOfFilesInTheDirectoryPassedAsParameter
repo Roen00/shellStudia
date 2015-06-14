@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#ls $1 -l produces the list of the elements in the folder
+#wc -l counts the lines from given input
+echo "Number of elements in the ${1} folder equals to: " $(expr $(ls $1 -l | wc -l) - 1)
